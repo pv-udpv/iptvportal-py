@@ -31,3 +31,18 @@ class RetryExhaustedError(IPTVPortalError):
 class ValidationError(IPTVPortalError):
     """Request validation failed."""
     pass
+
+
+class NetworkConnectionError(IPTVPortalError):
+    """Network connection failed."""
+    pass
+
+
+class RequestTimeoutError(IPTVPortalError):
+    """Request timeout."""
+    pass
+
+
+# Aliases for backwards compatibility
+ConnectionError = NetworkConnectionError
+TimeoutError = RequestTimeoutError
