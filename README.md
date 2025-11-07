@@ -17,6 +17,13 @@ uv pip install iptvportal-py
 sudo uvx pip install iptvportal-py
 ```
 
+### Install from GitHub
+```bash
+uv pip install git+https://github.com/pv-udpv/iptvportal-py.git
+# or system-wide:
+sudo uvx pip install git+https://github.com/pv-udpv/iptvportal-py.git
+```
+
 ### Classic pip
 ```bash
 pip install iptvportal-py
