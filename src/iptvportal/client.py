@@ -17,7 +17,7 @@ class IPTVPortalClient:
         ...     result = client.execute({
         ...         "jsonrpc": "2.0",
         ...         "id": 1,
-        ...         "method": "get",
+        ...         "method": "select",
         ...         "params": {"from": "subscriber", "limit": 10}
         ...     })
     
@@ -84,7 +84,7 @@ class IPTVPortalClient:
             >>> client.execute({
             ...     "jsonrpc": "2.0",
             ...     "id": 1,
-            ...     "method": "get",
+            ...     "method": "select",
             ...     "params": {"from": "media", "limit": 10}
             ... })
         """
