@@ -19,7 +19,7 @@ class AsyncIPTVPortalClient:
         ...     result = await client.execute({
         ...         "jsonrpc": "2.0",
         ...         "id": 1,
-        ...         "method": "get",
+        ...         "method": "select",
         ...         "params": {"from": "subscriber", "limit": 10}
         ...     })
     
